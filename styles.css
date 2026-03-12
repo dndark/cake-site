@@ -1,17 +1,17 @@
 :root {
-    --primary: #FF9F1C;
-    --primary-light: #FFBF69;
-    --secondary: #FB8500;
+    --primary: #FF8552;      /* 温暖活力的珊瑚橘 */
+    --primary-light: #FFB3C6; /* 可爱的浅粉色 */
+    --secondary: #FF4D6D;    /* 点缀用的草莓粉 */
     --bg-color: #FFFFFF;
-    --bg-light: #FFF9F2;
-    --text-main: #343A40;
-    --text-muted: #6C757D;
+    --bg-light: #FFF0F3;     /* 非常淡的粉白底色 */
+    --text-main: #4A4A4A;    /* 柔和的深灰色深色而非死黑 */
+    --text-muted: #8D99AE;
     --font-sans: 'ZCOOL XiaoWei', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
     --font-serif: 'ZCOOL KuaiLe', 'Ma Shan Zheng', cursive;
     --radius: 16px;
     --shadow-sm: 0 4px 6px rgba(0,0,0,0.04);
     --shadow-md: 0 10px 30px rgba(0,0,0,0.08);
-    --shadow-lg: 0 20px 40px rgba(251, 133, 0, 0.15);
+    --shadow-lg: 0 20px 40px rgba(255, 133, 82, 0.15); /* Orange shadow */
     --transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -108,13 +108,13 @@ h1, h2, h3, h4 {
 .btn-primary {
     background: var(--primary);
     color: white;
-    box-shadow: 0 4px 15px rgba(255, 159, 28, 0.4);
+    box-shadow: 0 4px 15px rgba(255, 133, 82, 0.4);
 }
 
 .btn-primary:hover {
-    background: var(--secondary);
+    background: var(--secondary); /* Hovers to pink */
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 159, 28, 0.6);
+    box-shadow: 0 6px 20px rgba(255, 77, 109, 0.6);
 }
 
 .btn-secondary {
@@ -276,13 +276,13 @@ h1, h2, h3, h4 {
     text-align: center;
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
-    border: 1px solid rgba(255, 159, 28, 0.1);
+    border: 1px solid rgba(255, 179, 198, 0.2); /* Pink border base */
 }
 
 .feature-card:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow-md);
-    border-color: var(--primary-light);
+    border-color: var(--primary); /* Hover orange */
 }
 
 .feature-icon {
